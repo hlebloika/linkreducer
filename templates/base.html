@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
-<h1>Paste your link here</h1>
+<div class="header">
+  <h1>Let's make links smaller!<h1>
+</div>
 <form method="post">
   <label for="input_link">Original link</label>
   <input type="text" id="input_link" name="input_link">

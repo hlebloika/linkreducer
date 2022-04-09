@@ -12,7 +12,7 @@ def main_page():
         short_url="http://35.179.15.24/" + link_id
         match_urls[link_id] = original_url
         return "<p>" + short_url + "</p>"
-    return render_template("main.html")
+    return render_template("base.html")
 
 @app.route("/<link_id>")
 def redirect_to_original_url(link_id):
